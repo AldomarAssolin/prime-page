@@ -1,0 +1,579 @@
+<?php
+/* 
+  Quando migrar para WordPress, basta manter este cabeçalho:
+  Template Name: Landing Page – Prime
+*/
+?>
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prime Assessoria Empresarial — Registro de Marcas, Tributário e Trânsito</title>
+  <meta name="description" content="Economize com consultoria tributária, proteja sua marca no INPI e resolva pendências de CNH. Atendimento em todo o Brasil. Fale com a Prime no WhatsApp.">
+  <link rel="canonical" href="https://www.seudominio.com.br/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Prime Assessoria Empresarial">
+  <meta property="og:description" content="Registro de marcas no INPI, consultoria tributária e direito de trânsito.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/images/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Acessibilidade -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      /* Paleta baseada nas artes: ajuste fino se necessário */
+      --prime-green: #224936;
+      /* fundo principal */
+      --prime-green-900: #1a3729;
+      /* variação mais escura */
+      --prime-gold: #d4af37;
+      /* dourado da marca */
+      --prime-cream: #f4efe6;
+      /* textos claros */
+      --prime-white: #ffffff;
+    }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      color: #1b1b1b;
+    }
+
+    .font-serif {
+      font-family: "Playfair Display", serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: var(--prime-green);
+    }
+
+    .navbar .nav-link {
+      color: var(--prime-cream) !important;
+      opacity: .9;
+    }
+
+    .navbar .nav-link:hover {
+      opacity: 1;
+    }
+
+    .navbar-brand {
+      color: var(--prime-cream);
+      font-weight: 700;
+    }
+
+    /* Hero */
+    .hero {
+      background: radial-gradient(1200px 600px at -10% -20%, rgba(212, 175, 55, .15), transparent 60%),
+        linear-gradient(180deg, var(--prime-green) 0%, var(--prime-green-900) 100%);
+      color: var(--prime-cream);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero .badge {
+      background: rgba(212, 175, 55, .15);
+      color: var(--prime-gold);
+      border: 1px solid rgba(212, 175, 55, .35);
+    }
+
+    .btn-whatsapp {
+      background: var(--prime-gold);
+      color: #111;
+      border: none;
+      font-weight: 700;
+    }
+
+    .btn-whatsapp:hover {
+      filter: brightness(.95);
+      color: #111;
+    }
+
+    /* Seções */
+    .section-title .line {
+      width: 64px;
+      height: 3px;
+      background: var(--prime-gold);
+    }
+
+    /* Cards de serviço */
+    .service-card {
+      border: 1px solid rgba(0, 0, 0, .06);
+      transition: transform .2s ease, box-shadow .2s ease;
+      background: #fff;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .08);
+    }
+
+    /* Equipe */
+    .team-card {
+      background: linear-gradient(180deg, #fff 0%, #faf8f2 100%);
+      border: 1px solid rgba(0, 0, 0, .06);
+    }
+
+    .team-card .role {
+      color: #4b5563;
+    }
+
+    /* Esteira de logos (substitui depoimentos) */
+    .logos-track {
+      display: flex;
+      gap: 48px;
+      align-items: center;
+      animation: scroll 20s linear infinite;
+    }
+
+    .logos-wrap {
+      overflow: hidden;
+      mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+
+    .logos-wrap:hover .logos-track {
+      animation-play-state: paused;
+    }
+
+    .logos-track img {
+      height: 42px;
+      opacity: .9;
+      filter: grayscale(100%);
+      transition: filter .2s, opacity .2s;
+    }
+
+    .logos-track img:hover {
+      filter: none;
+      opacity: 1;
+    }
+
+    .icon-gold {
+      color: var(--prime-gold);
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* Rodapé */
+    footer {
+      background: var(--prime-green-900);
+      color: var(--prime-cream);
+    }
+
+    /* Utilidades */
+    .text-gold {
+      color: var(--prime-gold) !important;
+    }
+
+    .bg-cream {
+      background: var(--prime-cream);
+    }
+  </style>
+</head>
+
+<body>
+
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 m-2 px-3 py-2 bg-light rounded" href="#servicos">
+    Pular para o conteúdo
+  </a>
+
+  <a id="ctaFab" class="btn btn-whatsapp d-sm-none"
+    style="position:fixed;right:16px;bottom:16px;z-index:1050;box-shadow:0 10px 20px rgba(0,0,0,.15)"
+    target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg class="bi" width="22" height="22" fill="currentColor" aria-hidden="true">
+      <use href="assets/icons/bootstrap-icons.svg#whatsapp"></use>
+    </svg>
+  </a>
+
+
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="assets/images/logo.png" alt="PRIME" width="32" height="32" class="img-fluid rounded">
+        PRIME <span style="color: var(--prime-gold)">ASSESSORIA</span>
+      </a>
+      <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
+        </ul>
+        <a id="ctaTop" class="btn btn-whatsapp ms-lg-3" target="_blank" rel="noopener">
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero py-5 mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 p-5">
+          <span class="badge rounded-pill mb-3">Assessoria Empresarial</span>
+          <h1 class="display-5 fw-bold font-serif lh-sm">
+            Sua empresa <span class="text-gold">protegida</span> e seus lucros <span class="text-gold">otimizados</span>.
+          </h1>
+          <p class="lead mt-3 opacity-90">
+            Economize com revisão tributária, <strong>proteja sua marca no INPI</strong> e <strong>regularize CNH com especialistas</strong>.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a id="ctaHero" class="btn btn-whatsapp btn-lg px-4" target="_blank" rel="noopener">
+              <svg class="bi" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <use href="/assets/icons/bootstrap-icons.svg#whatsapp"></use>
+              </svg>
+              Consultoria agora pelo WhatsApp
+            </a>
+            <a href="#servicos" class="btn btn-outline-light border-2">
+              Ver serviços
+            </a>
+          </div>
+          <small class="d-block mt-3 opacity-75">Atendimento em todo o Brasil</small>
+        </div>
+        <div class="col-12 col-md-4 py-5">
+          <img src="assets/images/logo.png" class="rounded shadow img-fluid" width="512" height="512" alt="Logo PRIME">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="py-5 mb-5">
+    <div class="container">
+      <div class="section-title text-center mb-4">
+        <div class="line mx-auto mb-3"></div>
+        <h2 class="font-serif fw-bold">Soluções que eliminam burocracia</h2>
+        <p class="text-muted">Segurança jurídica, economia tributária e exclusividade da sua marca.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 rounded service-card h-100">
+            <div class="card-header mb-2 text-center">
+              <svg class="bi icon-gold" width="80" height="80" fill="currentColor" aria-hidden="true">
+                <use href="assets/icons/bootstrap-icons.svg#exclude" />
+              </svg>
+            </div>
+            <div class="card-body mb-2">
+              <h5 class="font-serif">
+                Assessoria Tributária
+              </h5>
+              <p class="mb-3">Revisão fiscal, recuperação de tributos pagos indevidamente e planejamento tributário.</p>
+              <ul class="small mb-4">
+                <li>Levantamento de créditos</li>
+                <li>Compliance e riscos</li>
+                <li>Relatórios executivos</li>
+              </ul>
+            </div>
+            <div class="card-footer text-center">
+              <a id="ctaTributos" class="btn btn-whatsapp btn-lg px-4" target="_blank" rel="noopener">
+                <svg class="bi" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <use href="/assets/icons/bootstrap-icons.svg#whatsapp"></use>
+                </svg>
+                Quero Economizar
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-4 rounded service-card h-100">
+            <div class="card-header mb-2 text-center">
+              <svg class="bi icon-gold" width="80" height="80" fill="currentColor" aria-hidden="true">
+                <use href="assets/icons/bootstrap-icons.svg#wallet" />
+              </svg>
+            </div>
+            <div class="card-body mb-2">
+              <h5 class="font-serif">Registro de Marcas</h5>
+              <p class="mb-3">Do estudo de viabilidade ao deferimento no INPI. Proteja seu nome e evite dores de cabeça.</p>
+              <ul class="small mb-4">
+                <li>Busca e classificação</li>
+                <li>Protocolo e acompanhamento</li>
+                <li>Defesas e oposições</li>
+              </ul>
+            </div>
+            <div class="card-footer text-center">
+              <a id="ctaMarca" class="btn btn-whatsapp btn-lg px-4" target="_blank" rel="noopener">
+                <svg class="bi" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <use href="/assets/icons/bootstrap-icons.svg#whatsapp"></use>
+                </svg>
+                Registrar Marca
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-4 rounded service-card h-100">
+            <div class="card-header mb-2 text-center">
+              <svg class="bi icon-gold" width="80" height="80" fill="currentColor" aria-hidden="true">
+                <use href="assets/icons/bootstrap-icons.svg#sign-turn-right" />
+              </svg>
+            </div>
+            <div class="card-body mb-2">
+              <h5 class="font-serif">Direito de Trânsito</h5>
+              <p class="mb-3">Soluções reais para desbloqueio de CNH, recursos e regularização documental.</p>
+              <ul class="small mb-4">
+                <li>Análise do processo</li>
+                <li>Interposição de recursos</li>
+                <li>Acompanhamento até decisão</li>
+              </ul>
+            </div>
+            <div class="card-footer text-center">
+              <a id="ctaTransito" class="btn btn-whatsapp btn-lg px-4" target="_blank" rel="noopener">
+                <svg class="bi" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <use href="/assets/icons/bootstrap-icons.svg#whatsapp"></use>
+                </svg>
+                Regularizar CNH
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE / TIME -->
+  <section id="sobre" class="py-5 mb-5">
+    <div class="container">
+      <div class="section-title text-center mb-4">
+        <div class="line mx-auto mb-3"></div>
+        <h2 class="font-serif fw-bold">Conheça nossa equipe</h2>
+        <p class="text-muted">Estamos prontos para atendê-los.</p>
+      </div>
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-6">
+          <div class="rounded team-card h-100">
+            <div class="d-flex gap-3 align-items-center">
+              <img src="assets/images/fabio-soares.png" class="rounded shadow img-fluid"
+                width="900" height="1200" alt="Fábio Soares — Gestor Financeiro"
+                loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="rounded team-card h-100">
+            <div class="d-flex gap-3 align-items-center">
+              <img src="assets/images/bianca-amaral.png" class="rounded shadow img-fluid"
+                width="900" height="1200" alt="Bianca Amaral — Especialista em Trânsito"
+                loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS DE CLIENTES (Esteira) -->
+  <section id="clientes" class="py-5 mt-5">
+    <div class="container">
+      <div class="section-title text-center mb-4">
+        <div class="line mx-auto mb-3"></div>
+        <h2 class="font-serif fw-bold">Empresas que confiam na PRIME</h2>
+        <p class="text-muted">Algumas marcas atendidas pela nossa equipe.</p>
+      </div>
+
+      <div class="logos-wrap py-5">
+        <div class="logos-track">
+          <!-- Duplicamos o bloco para efeito de loop infinito -->
+          <img src="assets/logos/amiga-vulva.jpg" class="img-fluid " alt="Amiga Vulva" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/autosul-pecas-mecanicas.jpg" class="img-fluid " alt="Autosul Pecas Mecanicas" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/cafe-bistro.jpg" class="img-fluid " alt="Cafe Bistro" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/conexao-contabil.jpg" class="img-fluid " alt="Conexao Contabil" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/cotreseg.jpg" class="img-fluid " alt="Cotreseg" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/cucina-famiglia-fogaca.jpg" class="img-fluid " alt="Cucina Famiglia Fogaca" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/farmacia-thaty.jpg" class="img-fluid " alt="Farmacia Thaty" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/farmacia_thaty.jpg" alt="Farmacia Thaty" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/glass-piscinas.jpg" alt="Glass Piscinas" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/jvs.jpg" class="img-fluid " alt="Jvs" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/menezes-auto-center.jpg" class="img-fluid " alt="Menezes Auto Center" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/niveldorio.jpg" class="img-fluid " alt="Niveldorio" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/sankofa.jpg" class="img-fluid " alt="Sankofa" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/supermercado-central-express.jpg" class="img-fluid " alt="Supermercado Central Express" width="140" height="42" loading="lazy" decoding="async">
+
+          <img src="assets/logos/amiga-vulva.jpg" class="img-fluid " alt="Amiga Vulva" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/autosul-pecas-mecanicas.jpg" class="img-fluid " alt="Autosul Pecas Mecanicas" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/cafe-bistro.jpg" class="img-fluid " alt="Cafe Bistro" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/conexao-contabil.jpg" class="img-fluid " alt="Conexao Contabil" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/cotreseg.jpg" class="img-fluid " alt="Cotreseg" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/cucina-famiglia-fogaca.jpg" class="img-fluid " alt="Cucina Famiglia Fogaca" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/farmacia-thaty.jpg" class="img-fluid " alt="Farmacia Thaty" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/farmacia_thaty.jpg" class="img-fluid " alt="Farmacia Thaty" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/glass-piscinas.jpg" class="img-fluid " alt="Glass Piscinas" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/jvs.jpg" alt="Jvs" class="img-fluid " width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/menezes-auto-center.jpg" class="img-fluid " alt="Menezes Auto Center" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/niveldorio.jpg" class="img-fluid " alt="Niveldorio" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/sankofa.jpg" class="img-fluid " alt="Sankofa" width="140" height="42" loading="lazy" decoding="async">
+          <img src="assets/logos/supermercado-central-express.jpg" class="img-fluid " alt="Supermercado Central Express" width="140" height="42" loading="lazy" decoding="async">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <div class="mx-auto" style="width:64px;height:3px;background:var(--prime-gold)"></div>
+        <h2 class="font-serif fw-bold mt-3">Perguntas frequentes</h2>
+      </div>
+
+      <div class="accordion" id="faq">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="q1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="true" aria-controls="a1">
+              Quanto tempo leva o registro de marca no INPI?
+            </button>
+          </h2>
+          <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+            <div class="accordion-body">
+              Em média de 8 a 12 meses, variando conforme exigências do INPI. Nós cuidamos do protocolo, acompanhamento e eventuais defesas.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="q2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+              Quando vale a pena revisar tributos?
+            </button>
+          </h2>
+          <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">
+              Em mudanças de regime, créditos não aproveitados ou pagamentos indevidos. Fazemos diagnóstico sem custo para apontar economia possível.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="q3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+              É possível desbloquear minha CNH?
+            </button>
+          </h2>
+          <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faq">
+            <div class="accordion-body">
+              Em muitos casos, sim. Analisamos o processo, prazos e bases legais para interpor o recurso adequado.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA FINAL -->
+  <section class="py-5 hero">
+    <div class="container text-center">
+      <h2 class="font-serif fw-bold">Pronto para proteger sua marca e economizar tributos?</h2>
+      <p class="lead opacity-90">Fale agora com nossa equipe e receba um diagnóstico rápido.</p>
+      <a id="ctaHero" class="btn btn-whatsapp btn-lg px-4" target="_blank" rel="noopener">
+        <svg class="bi" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <use href="/assets/icons/bootstrap-icons.svg#whatsapp"></use>
+        </svg>
+        Consultoria agora pelo WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="py-4">
+    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3">
+      <div class="d-flex align-items-center gap-2">
+        <img src="assets/images/logo.png" width="28" height="28" alt="PRIME">
+        <strong>PRIME</strong> <span class="ms-2">Assessoria Empresarial</span>
+      </div>
+      <small class="opacity-75">© <?php echo date('Y'); ?> PRIME – Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// SEMPRE seu número aqui (destino fixo da Prime)
+const RAW_WHATSAPP_NUMBER = "55 55 9914 1442"; // qualquer formato
+const sanitize = s => (s||"").replace(/\D/g,"").replace(/^0+/,"");
+const toIntlBR = s => (s = sanitize(s), s.startsWith("55") ? s : "55"+s);
+const PHONE = toIntlBR(RAW_WHATSAPP_NUMBER);
+
+// Só 'text=' (evita clientes que ignoram parâmetros extras)
+const wa = txt => `https://wa.me/${PHONE}?text=${encodeURIComponent(txt)}`;
+// Fallback para navegadores chatos
+const waApi = txt => `https://api.whatsapp.com/send?phone=${PHONE}&text=${encodeURIComponent(txt)}`;
+
+const msgs = {
+  default: "Olá! Vim pelo site da PRIME e gostaria de falar com um especialista.",
+  tributos: "Olá! Quero reduzir custos/recuperar créditos tributários. Podemos conversar?",
+  marca: "Olá! Quero registrar minha marca no INPI. Pode me orientar?",
+  transito: "Olá! Preciso de ajuda com CNH/recursos de trânsito."
+};
+
+function fill(id, text){
+  const a = document.getElementById(id);
+  if(!a) return;
+  a.href = wa(text);
+  a.addEventListener("click", () => {
+    setTimeout(()=>{ if(document.visibilityState === "visible") a.href = waApi(text); }, 600);
+  }, { once:true });
+}
+
+["ctaTop","ctaHero","ctaBottom"].forEach(id => fill(id, msgs.default));
+fill("ctaTributos", msgs.tributos);
+fill("ctaMarca", msgs.marca);
+fill("ctaTransito", msgs.transito);
+
+</script>
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Prime Assessoria Empresarial",
+      "url": "https://www.seudominio.com.br/",
+      "logo": "https://www.seudominio.com.br/assets/images/logo.png",
+      "areaServed": "BR",
+      "telephone": "+5555999141442",
+      "sameAs": ["https://www.instagram.com/prime_empresarial", "https://www.linkedin.com/company/..."],
+      "serviceOffered": [{
+          "@type": "Service",
+          "name": "Registro de Marca no INPI"
+        },
+        {
+          "@type": "Service",
+          "name": "Consultoria Tributária"
+        },
+        {
+          "@type": "Service",
+          "name": "Direito de Trânsito (CNH)"
+        }
+      ]
+    }
+  </script>
+
+
+</body>
+
+</html>
