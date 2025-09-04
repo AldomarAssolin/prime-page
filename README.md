@@ -1,120 +1,120 @@
-# 🚀 PRIME Assessoria Empresarial - Landing Page Persuasiva
+# Prime Assessoria — Landing Page (Case Study)  
+[![PHP](https://img.shields.io/badge/PHP-8993be?logo=PHP&logoColor=white)](#)
+[![PHP](https://img.shields.io/badge/Wordpress-21759b?logo=Wordpress&logoColor=white)](#)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](#)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](#)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=000)](#)
+[![Bootstrap 5.3](https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white)](#)
+[![A11y](https://img.shields.io/badge/Accessibility-A11y-0A7EA4)](#)
+[![SEO](https://img.shields.io/badge/SEO-Optimized-2E7D32)](#)
 
-## 📋 Resumo das Melhorias Implementadas
+<!-- Substitua os scores após rodar o Lighthouse no seu deploy -->
+[![Lighthouse Performance](https://img.shields.io/badge/Performance-83%2B-brightgreen)](#)
+[![Lighthouse Accessibility](https://img.shields.io/badge/Accessibility-90%2B-brightgreen)](#)
+[![Lighthouse BestPractices](https://img.shields.io/badge/Best%20Practices-100%2B-brightgreen)](#)
+[![Lighthouse SEO](https://img.shields.io/badge/SEO-100%2B-brightgreen)](#)
 
-Esta landing page foi completamente otimizada para conversão, implementando técnicas avançadas de persuasão e psicologia de vendas.
+**Live Preview:** https://prime-assessoria.netlify.app/  
+**Backup Preview (GitHub Pages):** https://github.com/AldomarAssolin/prime-page.git  
+**(Opcional) Relatório Lighthouse:** https://pagespeed.web.dev/analysis?url=https%3A%2F%2Flively-wisp-a7b5a8.netlify.app%2F
 
-## ✨ Principais Melhorias Implementadas
-
-### 1. **Hero Section Persuasivo**
-- ✅ Estatísticas impactantes (R$ 2M+ economizados, 500+ marcas, 98% sucesso)
-- ✅ Lista de benefícios com ícones visuais
-- ✅ Banner de urgência com escassez (10 vagas limitadas)
-- ✅ CTAs mais persuasivos e visíveis
-
-### 2. **Seção de Serviços Aprimorada**
-- ✅ Badge "MAIS POPULAR" no serviço principal
-- ✅ Resultados em destaque (economia média, taxas de sucesso)
-- ✅ Benefícios gratuitos destacados
-- ✅ Hover effects e animações
-
-### 3. **Seção da Equipe Credibilizada**
-- ✅ Credenciais profissionais detalhadas
-- ✅ Números de casos de sucesso
-- ✅ Especializações específicas
-- ✅ Layout mais profissional
-
-### 4. **Depoimentos e Casos de Sucesso**
-- ✅ Testemunhos reais com resultados específicos
-- ✅ Badges de resultado (R$ 180K economizados, CNH desbloqueada)
-- ✅ CTA intermediário para conversão
-- ✅ Prova social visual
-
-### 5. **Seção de Garantias e Segurança**
-- ✅ 4 pilares de confiança (Seguro, Rápido, Experiente, Comprovado)
-- ✅ Banner de garantia de resultado (90 dias, 100% devolução)
-- ✅ Eliminação de riscos para o cliente
-
-### 6. **Urgência e Escassez**
-- ✅ Contador regressivo visual
-- ✅ Oferta limitada por tempo
-- ✅ Vagas restantes (apenas 3)
-- ✅ CTA de alta urgência
-
-### 7. **CTA Final Otimizado**
-- ✅ Benefícios finais em destaque
-- ✅ Botão principal mais visível
-- ✅ Banner de última chance
-- ✅ Informações de segurança
-
-### 8. **Elementos Visuais e UX**
-- ✅ Animações CSS suaves
-- ✅ Hover effects interativos
-- ✅ Cores de urgência (vermelho para escassez)
-- ✅ Ícones visuais em todos os benefícios
-
-## 🎯 Técnicas de Persuasão Aplicadas
-
-### **Princípio da Escassez**
-- Vagas limitadas (10 consultorias gratuitas)
-- Contador regressivo
-- "Últimas vagas restantes"
-
-### **Prova Social**
-- 500+ clientes atendidos
-- Depoimentos com resultados específicos
-- Logos de empresas atendidas
-
-### **Autoridade e Credibilidade**
-- 15+ anos de experiência
-- Certificações profissionais
-- Especializações comprovadas
-
-### **Benefícios Claros**
-- Diagnóstico gratuito em 24h
-- Garantia de resultado
-- Sem compromisso
-
-### **Urgência**
-- Oferta por tempo limitado
-- Contador regressivo
-- Vagas restantes
-
-## 📱 Responsividade
-
-- ✅ Otimizada para mobile
-- ✅ Animações responsivas
-- ✅ Layout adaptativo
-- ✅ CTAs móveis otimizados
-
-## 🚀 Próximos Passos para WordPress
-
-1. **Converter para tema WordPress**
-2. **Adicionar painel administrativo**
-3. **Integrar com formulários de contato**
-4. **Adicionar analytics e tracking**
-5. **Implementar A/B testing**
-
-## 📊 Métricas Esperadas
-
-- **Taxa de conversão**: 15-25% (vs. 2-5% média)
-- **Tempo na página**: 3-5 minutos
-- **Engajamento**: 70-80%
-- **CTR nos CTAs**: 8-12%
-
-## 🔧 Tecnologias Utilizadas
-
-- HTML5 semântico
-- CSS3 com animações
-- Bootstrap 5
-- JavaScript vanilla
-- Ícones Bootstrap Icons
-- Design responsivo
-
-## 📞 Contato
-
-Para implementação como template WordPress ou outras melhorias, entre em contato através do WhatsApp da PRIME.
+> Este case reúne **UX + front-end** para conversão, direcionado a **Registro de Marca**, **Assessoria Tributária** e **Direito de Trânsito**.  
+> Foco em credibilidade (estatísticas, especialistas, prova social), contato rápido (WhatsApp) e linguagem clara (sem promessas de reembolso).
 
 ---
 
-**Nota**: Esta landing page foi otimizada seguindo as melhores práticas de conversão e psicologia de vendas, testadas e comprovadas em milhares de casos de sucesso.
+## 🎯 Objetivos do projeto
+- **Gerar leads qualificados** com CTAs claros e baixa fricção (sticky bar + FAB + pop-up leve).
+- **Reforçar credibilidade** (500+ marcas, 98% aprovação no INPI, acompanhamento até a decisão, transparência).
+- **Separar serviços** com arquitetura de informação clara e ícones dedicados.
+- **Ajustar copy**: remover “dinheiro de volta” e adotar mensagens de confiança.
+
+---
+
+## 🛠️ Entregas (Highlights)
+- **Hero/Headline**: “**Registro de Marca com especialistas: segurança, exclusividade e o melhor custo-benefício do mercado.**”
+- **Três serviços** bem separados (ícones + benefits + CTA específico por serviço).
+- **Especialistas** logo acima (humanização com foto + credenciais).
+- **Prova social** em carrossel de depoimentos (fictícios sinalizados).
+- **Sticky bar de WhatsApp** + **FAB mobile** + **pop-up** (captura de WhatsApp).
+- **A11y & SEO**: headings semânticos, aria, contraste, Open Graph/Twitter, JSON-LD.
+- **Performance**: lazy-loading de imagens, preload/preconnect de fontes, dependências enxutas.
+
+---
+
+## 🧰 Stack
+**HTML5**, **CSS (Bootstrap 5.3)**, **JavaScript (vanilla)**, **Bootstrap Icons**, **Google Fonts (Playfair Display, Inter)**.
+
+---
+
+## 🧩 Estrutura das seções
+1. Navbar (Serviços, Especialistas, Depoimentos, Por que a PRIME)  
+2. Hero (headline + credenciais + CTA)  
+3. Especialistas (humanização)  
+4. Serviços (3 cartões com ícones/CTAs)  
+5. Depoimentos (carrossel)  
+6. Por que a PRIME? (blocos com ícones)  
+7. CTA final  
+8. Footer  
+9. Sticky WhatsApp Bar + FAB mobile + Modal pop-up
+
+---
+
+## 📲 Integração WhatsApp
+- **Sanitização** de número (qualquer formato → `55DDDNÚMERO`).  
+- **Fallback automático** para `api.whatsapp.com` se `wa.me` não abrir.  
+- **Mensagens por contexto** (padrão, tributos, marcas, trânsito).  
+- **UTM opcional** para analytics.
+
+> **Config rápida**: edite `RAW_WHATSAPP_NUMBER`, `msgs` e `UTM` no script principal.
+
+---
+
+## ♿ Acessibilidade (Checklist)
+- Hierarquia de headings consistente (`h1` no hero, `h2` nas seções).  
+- `aria-label` em botões/links críticos; ícones `aria-hidden="true"`.  
+- Contraste adequado nos CTAs e sticky bar.  
+- Carrossel e modal navegáveis via teclado.
+
+---
+
+## 🔎 SEO (Checklist)
+- `title` e `meta description` informativos.  
+- `link rel="canonical"`.  
+- Open Graph/Twitter Card.  
+- **Schema.org/JSON-LD** (`ProfessionalService` + serviços/telefone).
+
+---
+
+## ▶️ Rodando localmente
+```bash
+git clone https://github.com/seu-usuario/prime-assessoria-landing.git
+cd prime-assessoria-landing
+# abrir index.html no navegador
+# ou usar a extensão Live Server (VS Code) para auto-reload
+
+```
+
+## 👨🏻‍💻 Autor
+
+### Aldomar “Manex” Assolin — Full Stack & Product-minded
+
+- [@aldomarassolin](https://www.github.com/AldomarAssolin)
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://aldomarassolin-dev-php.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aldomarassolinn)
+
+> Email: [assolinaldomar@gmail.com](mailto:assolinaldomar@gmail.com)
+
+ ## Screenshots
+
+![App Screenshot](docs/hero.PNG)
+
+![App Screenshot](docs/screamshot-pop-up.PNG)
+
+![App Screenshot](docs/servicos.PNG)
+
+![App Screenshot](docs/depoimentos.PNG)
+
+![App Screenshot](docs//styck.PNG)

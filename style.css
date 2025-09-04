@@ -1,3 +1,62 @@
+ :root{
+      --prime-green:#224936; --prime-green-900:#1a3729; --prime-gold:#d4af37; --prime-cream:#f4efe6; --prime-white:#fff;
+    }
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif;color:#1b1b1b}
+    .font-serif{font-family:"Playfair Display",serif}
+
+    /* Navbar */
+    .navbar{background:var(--prime-green)}
+    .navbar .nav-link{color:var(--prime-cream)!important;opacity:.9}
+    .navbar .nav-link:hover{opacity:1}
+    .navbar-brand{color:var(--prime-cream);font-weight:700}
+
+    /* Hero sem imagem/logo (conforme pedido) */
+    .hero{
+      background: linear-gradient(180deg,var(--prime-green) 0%, var(--prime-green-900) 100%);
+      color:var(--prime-cream);
+      position:relative; overflow:hidden;
+    }
+    .hero .badge{background:rgba(212,175,55,.15);color:var(--prime-gold);border:1px solid rgba(212,175,55,.35)}
+    .credentials:hover{box-shadow:0 4px 12px rgba(0,0,0,.1)}
+    .btn-whatsapp{background:var(--prime-gold);color:#111;border:none;font-weight:700}
+    .btn-whatsapp:hover{filter:brightness(.95);color:#111}
+
+    .section-title .line{width:64px;height:3px;background:var(--prime-gold)}
+    .service-card{border:1px solid rgba(0,0,0,.06);transition:transform .2s, box-shadow .2s;background:#fff}
+    .service-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.08)}
+    .icon-gold{color:var(--prime-gold)}
+    .team-card{background:linear-gradient(180deg,#fff 0%,#faf8f2 100%);border:1px solid rgba(0,0,0,.06)}
+
+    /* Depoimentos - carousel */
+    .testimonial-quote{font-style:italic}
+
+    /* Logos (se quiser reativar depois) */
+    .logos-track{display:flex;gap:48px;align-items:center;animation:scroll 20s linear infinite}
+    .logos-wrap{overflow:hidden;mask-image:linear-gradient(to right, transparent, black 10%, black 90%, transparent)}
+    .logos-wrap:hover .logos-track{animation-play-state:paused}
+    .logos-track img{height:84px;opacity:.9;filter:grayscale(100%);transition:filter .2s,opacity .2s}
+    .logos-track img:hover{filter:none;opacity:1}
+    @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    @media (max-width:576px){.logos-track{gap:24px}}
+
+    /* Rodapé */
+    footer{background:var(--prime-green-900);color:var(--prime-cream)}
+
+    .bg-cream{background:var(--prime-cream)}
+    .text-gold{color:var(--prime-gold)!important}
+
+    /* Sticky WhatsApp Bar */
+    .sticky-wa{
+      position:fixed;left:0;right:0;bottom:0;z-index:1060;
+      background:#0f172a; /* contraste alto */
+      color:#fff; padding:.6rem 1rem;
+      box-shadow:0 -8px 20px rgba(0,0,0,.25)
+    }
+    .sticky-wa .btn{font-weight:700}
+    @media (max-width:576px){.sticky-wa p{font-size:.9rem;margin-bottom:.5rem}}
+
+    /* Pop-up simples (modal bootstrap) - captura WhatsApp */
+    .modal-header .modal-title{font-weight:700}
 .feature-icon {
   width: 4rem;
   height: 4rem;
