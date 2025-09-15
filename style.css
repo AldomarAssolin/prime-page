@@ -19,7 +19,7 @@
     .hero .badge{background:rgba(212,175,55,.15);color:var(--prime-gold);border:1px solid rgba(212,175,55,.35)}
     .credentials:hover{box-shadow:0 4px 12px rgba(0,0,0,.1)}
     .btn-whatsapp{background:var(--prime-gold);color:#111;border:none;font-weight:700}
-    .btn-whatsapp:hover{filter:brightness(.95);color:#111}
+    .btn-whatsapp:hover{filter:brightness(.95);color:#111;background: #d4af37;}
 
     .section-title .line{width:64px;height:3px;background:var(--prime-gold)}
     .service-card{border:1px solid rgba(0,0,0,.06);transition:transform .2s, box-shadow .2s;background:#fff}
