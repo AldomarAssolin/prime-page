@@ -15,7 +15,7 @@
   <meta property="og:description"
     content="Registro de Marca com especialistas: segurança, exclusividade e o melhor custo-benefício do mercado.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="/assets/images/og-cover.jpg">
+  <meta property="og:image" content="https://www.prime-assessoria.com//assets/images/og-cover.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Fonts & CSS -->
@@ -26,7 +26,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap"
     rel="stylesheet">
-  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="icon" type="image/png" href="https://www.prime-assessoria.com/assets/images/logo.png">
   <link rel="stylesheet" href="style.css">
 
   <!-- Google Tag Manager -->
@@ -476,8 +476,8 @@
       "@context":"https://schema.org",
       "@type":"ProfessionalService",
       "name":"Prime Assessoria Empresarial",
-      "url":"https://www.seudominio.com.br/",
-      "logo":"https://www.seudominio.com.br/assets/images/logo.png",
+      "url":"https://www.prime-assessoria.com/",
+      "logo":"https://www.prime-assessoria.com/assets/images/logo.png",
       "areaServed":"BR",
       "telephone":"+5555999141442",
       "serviceOffered":[
@@ -499,11 +499,6 @@
     const wa = txt => `https://wa.me/${PHONE}?text=${encodeURIComponent(txt)}${UTM ? `&${UTM}` : ""}`;
     const waApi = txt => `https://api.whatsapp.com/send?phone=${PHONE}&text=${encodeURIComponent(txt)}${UTM ? `&${UTM}` : ""}`;
 
-    const msgs = {
-      default: "Olá! Vim pelo site da PRIME e gostaria de falar com um especialista em registro de marca.",
-      marca: "Olá! Quero registrar minha marca no INPI. Pode me orientar?",
-    };
-
     function wireCta(id, text) {
       const a = document.getElementById(id);
       if (!a) return;
@@ -516,8 +511,12 @@
       }, { once: true });
     }
 
-    ["ctaTop", "ctaHero", "ctaFinal", "ctaFab", "ctaSticky"].forEach(id => wireCta(id, msgs.default));
-    wireCta("ctaMarca", msgs.marca);
+    // Define a mensagem única para todos os CTAs
+    const CTA_MESSAGE = "Olá! Vim pelo site da PRIME e gostaria de falar com um especialista em registro de marca.";
+
+    // Aplica para todos os botões
+    ["ctaTop", "ctaHero", "ctaFinal", "ctaFab", "ctaSticky", "ctaMarca","ctaModal"].forEach(id => wireCta(id, CTA_MESSAGE));
+
 
     // Pop-up leve (Modal) após alguns segundos
     const popupDelayMs = 10000; // 10s
@@ -540,7 +539,7 @@
       const input = document.getElementById('leadPhone');
       const phoneRaw = input.value || "";
       const phone = toIntlBR(phoneRaw);
-      const txt = "Olá! Gostaria de agendar um diagnóstico gratuito.";
+      const txt = CTA_MESSAGE;
       const url = `https://wa.me/${PHONE}?text=${encodeURIComponent(phone + " - " + txt)}`;
       window.open(url, "_blank", "noopener");
     }
@@ -564,8 +563,8 @@
         </div>
         <div class="modal-footer">
           <button class="btn btn-secondary" data-bs-dismiss="modal">Agora não</button>
-          <button class="btn btn-whatsapp"
-            onclick="sendLeadWhats(); window.dataLayer && dataLayer.push({event:'cta_click', cta_id:'ctaModal', cta_label:'Enviar diagnóstico gratuito', cta_section:'modal'});">
+          <button id="ctaModal" class="btn btn-whatsapp"
+            onclick="sendLeadWhats(); window.dataLayer && dataLayer.push({event:'cta_click', cta_id:'ctaModal', cta_section:'modal'});">
             <svg class="bi" width="18" height="18" fill="currentColor" aria-hidden="true">
               <use href="/assets/icons/bootstrap-icons.svg#whatsapp"></use>
             </svg>
@@ -577,7 +576,7 @@
   </div>
 
   <script>
-    if (location.hostname === "localhost" || location.hostname === "127.0.0.1:5500") {
+    if(window.location.hostname === "localhost"){
 
       (function () {
         // Cria o painel
